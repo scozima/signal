@@ -1,0 +1,44 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(#000, .16);
+  border-radius: 4px;
+  transition: .3s;
+
+  &.online {
+    background: lightblue;
+  }
+  &.offline {
+    background: #ddd;
+  }
+}
+
+ul.btn-box {
+  display: flex;
+  column-gap: 5px;
+
+  >li {
+    >button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #fff;
+      border-radius: 999px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      min-height: 20px;
+      min-width: 100px;
+      transition: .3s;
+    }
+  }
+}
